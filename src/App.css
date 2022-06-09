@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  margin: 2px;
+ 
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+button{
+  margin-top: 5px;
+  border: none;
+  color: aliceblue;
+  background-color: black;
+  padding: 5px;
+  cursor: pointer;
+
+}
+.container{
+
+max-width: 300px;
+margin: 0 auto;
+
+}
+.anime{
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: anime .3s forwards;
+}
+
+@keyframes anime{
+  to{
+    transform: initial;
+    opacity: 1;
+  }
+}
